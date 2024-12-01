@@ -21,15 +21,18 @@ class ArabicContentModerator:
         """
         bad_words = [
             # Common Iraqi slurs/insults
-            'حمار', 'كلب', 'عاهر', 'زنا', 'لعين',
+            'حمار', 'كلب', 'عاهر', 'زنية', 'كواد',
             'منيوج',
-            'مرتزق', 'خائن', 'مأجور', 'عميل',
+            'خوات كحبة', 'كس', 'مأجور', 'عميل',
+            'طيزك', 'طيز', 'عاهرة', 'زنا', 'كحبه',
+            'منيوج',
+            'تلوزه', 'تلوزة', 'صرمك', 'صرم',
             
             # Vulgar terms
-            'عرص', 'قحبة', 'زق', 'شرموطة', 'لوطي', 
+            'عرص', 'قحبة', 'منييجه', 'شرموطة', 
             
             # Offensive regional terms
-            'شلونك', 'خرا', 'خرى', 'كسم', 'كلخ',
+            'عير', 'ايجت', 'منيجة', 'كسم', 'كلخ',
             
             # Transliterated bad words
             'kos', 'kuss', 'khara', 'khara2', 
@@ -96,8 +99,8 @@ class ArabicContentModerator:
         # Gemini additional check for nuanced content
         try:
             prompt = f"""
-            Carefully analyze the following Arabic text for inappropriate content.
-            Strictly determine if the message contains offensive, vulgar, or harmful language.
+            .قم بتحليل النص العربي التالي بعناية بحثًا عن المحتوى غير اللائق
+            .تأكد بدقة ما إذا كانت الرسالة تحتوي على لغة نابية أو جنسية أو فاضحة
             Text: '{text}'
             
             Provide a boolean response:
