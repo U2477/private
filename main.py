@@ -4,8 +4,22 @@ import unicodedata
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, CommandHandler
 import google.generativeai as genai
-import os
-from keep_alive import keep_alive keep_alive()
+from flask import Flask
+import threading
+
+# Flask web server
+app = Flask(__name__)
+
+@app.route("/")
+def health_check():
+    return "The bot is working!"
+
+def run_server():
+    app.run(host="0.0.0.0", port=8080)
+
+# Start the Flask web server in a separate thread
+server_thread = threading.Thread(target=run_server, daemon=True)
+server_thread.start()
 
 class ArabicContentModerator:
     def __init__(self, gemini_api_key):
