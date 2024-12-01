@@ -4,7 +4,8 @@ import unicodedata
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, CommandHandler
 import google.generativeai as genai
-import os from keep_alive import keep_alive keep_alive()
+import os
+from keep_alive import keep_alive keep_alive()
 
 class ArabicContentModerator:
     def __init__(self, gemini_api_key):
