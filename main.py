@@ -116,6 +116,7 @@ class ArabicContentModerator:
         try:
             prompt = f"""
             .قم بتحليل النص تحليلا سهلا بالعربية وحدد الألفاظ الجنسية فقط مثل نيج و كس 
+            لا تمسح السب العادي فقط السب القوي جدا
             Text: '{text}'
             
             Provide a boolean response:
