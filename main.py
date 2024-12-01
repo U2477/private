@@ -115,8 +115,7 @@ class ArabicContentModerator:
         # Gemini additional check for nuanced content
         try:
             prompt = f"""
-            .قم بتحليل النص العربي التالي بعناية بحثًا عن الجنسية فقط
-            . تأكد بدقة ما إذا كانت الرسالة تحتوي على لغة نابية جدا فقط أو جنسية جدا فقط أو فاضحة جدا
+            .قم بتحليل النص تحليلا سهلا بالعربية وحدد الألفاظ الجنسية فقط مثل نيج و كس 
             Text: '{text}'
             
             Provide a boolean response:
