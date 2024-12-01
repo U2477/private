@@ -115,6 +115,7 @@ class ArabicContentModerator:
         # Gemini additional check for nuanced content
         try:
             prompt = f"""
+            لا تمسح الرسالة اذا لم تتعرف على معنى الكلمة لاتمسح الرسائل اذا لم تعرف معناها
             .قم بتحليل النص تحليلا سهلا بالعربية وحدد الألفاظ الجنسية فقط مثل نيج و كس 
             لا تمسح السب العادي فقط السب القوي جدا
             Text: '{text}'
