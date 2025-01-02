@@ -212,8 +212,8 @@ def get_api_keys():
     Collect API keys with a simple inline input method
     """
     # Option 1: Hardcoded keys (RECOMMENDED FOR TESTING ONLY)
-    TELEGRAM_BOT_TOKEN = '7985356892:AAGv9-zw1IJneyMrMHuDr0fhAKhnAWyyCrY'
-    GOOGLE_GEMINI_API_KEY = 'AIzaSyAseXen26vnBIoaEJm1RLxLbh81NkdFodU'
+    TELEGRAM_BOT_TOKEN = 'xxxxxxxxxxxxxxxz'
+    GOOGLE_GEMINI_API_KEY = 'AIzaSyAseXen26vnBIoaxxxxxxxxxxxxxx'
 
     # Validate keys
     if TELEGRAM_BOT_TOKEN == 'YOUR_TELEGRAM_BOT_TOKEN' or GOOGLE_GEMINI_API_KEY == 'YOUR_GOOGLE_GEMINI_API_KEY':
